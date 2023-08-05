@@ -12,7 +12,7 @@ public class AppTipos {
         float varOps = (float) dobro;
         char serie = 'A';
         boolean buliana = false;
-  
+        
         System.out.println("\n");
         System.out.println("A idade é " + idade);
         System.out.println("qualquer é " + qualquer);
