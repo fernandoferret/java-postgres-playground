@@ -4,6 +4,16 @@ public class Cliente {
     private double renda;
     private char sexo;
     private int anoNascimento;
+    private boolean especial;
+
+    public Cliente() {
+        System.out.println("Criando cliente");
+        double aleatorio = Math.random();
+        if (aleatorio > 0.5)
+            especial = true;
+        else
+            especial = false;
+    }
 
     public double getRenda(){
         return renda;
@@ -33,6 +43,14 @@ public class Cliente {
 
     public void setAnoNascimento(int anoNascimento) {
         this.anoNascimento = anoNascimento;
+    }
+
+    public boolean isEspecial() {
+        return especial;
+    }
+
+    public void setEspecial(boolean especial) {
+        this.especial = especial;
     }
 
 }
