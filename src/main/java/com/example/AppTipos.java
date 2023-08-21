@@ -4,7 +4,9 @@ public class AppTipos {
  
     public static void main(String[] args) {
 
-        // Tipos númericos - Aula 3
+        /***
+         * Tipos númericos - Aula 3
+         */
 
         int idade = 50;
         byte qualquer = 127;

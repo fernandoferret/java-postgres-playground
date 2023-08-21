@@ -7,12 +7,19 @@ public class Cliente {
     private boolean especial;
 
     public Cliente() {
-        System.out.println("Criando cliente");
+        System.out.println("Criando cliente usando construtor sem parâmetros...");
         double aleatorio = Math.random();
         if (aleatorio > 0.5)
             especial = true;
         else
             especial = false;
+    }
+
+    public Cliente(double renda, char sexo) {
+        this();
+        System.out.println("Criando cliente usando construtor com parâmetros...");
+        setRenda(renda);
+        this.sexo = sexo;
     }
 
     public double getRenda(){
